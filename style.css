@@ -1,0 +1,120 @@
+#content a {color:#00a9e2;font-size:16px;font-weight:400;text-decoration:underline;text-decoration-color:#00a9e2;text-underline-offset:.2em}
+#content a *,.nav-link {color:#fff;font-size:16px;font-weight:400;text-decoration:underline;text-decoration-color:#00a9e2;text-underline-offset:.2em}
+* #content a *,.nav-link *{color:#00a9e2}
+* #content a:hover,.nav-link:hover{color:#00a9e2;text-decoration:underline}#footer a,.navbar-brand{color:#ffffff;text-decoration:none}#footer a *,.navbar-brand #footer a:hover,.navbar-brand:hover{color:#ffffff;text-decoration:underline}#content table td,#content table th{border:1px solid #ccc;padding:6px 12px;text-align:left}*{font-family: Atkinson Hyperlegible;line-height:1.4;letter-spacing:.01rem;font-size:16px;font-weight:300;text-rendering:optimizeLegibility}h2{font-size:22px;font-weight:700;font-color:grey;padding-top:2em;padding-bottom:0;line-height:1em}.container{max-width:600px}.navbar-brand{font-size:20px;font-color:#ffffff;font-family:inconsolata;text-transform:uppercase;font-weight:300px;letter-spacing:.2rem}#content p{margin-bottom:.6rem}#content h1,#content h2,#content h3,#content h4,#content h5,#content h6{margin:1rem 0 .6rem}#content img{display:block;margin:1rem auto;max-width:100%}#content .avatar>img{border-radius:50%;float:right;margin:-8px 0 0 16px;height:140px;width:140px}#content ol{counter-reset:list;list-style:none;padding-left:2rem}#content ol>li{display:table-row}#content ol>li:before{content:"[" counter(list,decimal)"] ";counter-increment:list;display:table-cell;text-align:right;padding-right:.5em}#content .container>ol,#content .footnotes>ol{padding-left:0}#content ul{list-style:inside;padding-left:2rem}#content ul>li{list-style-position:outside;margin-left:1em}#content .container>ul,#content .footnotes>ul{padding-left:0}#content table{margin:1rem auto;width:100%}#content table th{font-weight:700}#content table tr:nth-child(2n){background-color:#000000}#content blockquote{border-left:4px solid;font-style:italic;margin:1rem 0;padding:8px}#content code{color:#ffffff;background-color:#000000;border:1px solid #000000;border-radius:10%;padding:0 4px}#content pre code{all:unset}#content .highlight{margin:1rem auto}#content .highlight>pre{padding:8px}
+body {
+  background-color: #000;
+  color: #fff;
+}
+p {
+  font-size: 18px;
+}
+h2 {
+  font-size: 24px;
+}
+
+.light-mode {
+  background: #fff;
+  color: #000;
+  
+}
+.light-mode a{
+  color: #000;
+}
+.light-mode #content a, nav-link {
+  color: #000;
+}
+.light-mode #content a *, nav-link {color:#00a9e2}
+
+.light-mode #content a:hover, nav-link:hover 
+{ 
+  color:#00a9e2;
+  text-decoration:underline
+} 
+.light-mode #footer a, navbar-brand {color:#000000;text-decoration:none}
+
+.project {
+            width: 98%;
+            margin-top: 0px;
+            padding: 5px;
+            background-color: #000000;
+            border-style: solid;
+            border-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+        }
+        .project h2 {
+            font-size: 24px;
+            margin: 0 0 5px 0;
+            color: #00a9e2;
+          margin-top: -15px;
+        }
+        .project p {
+            font-size: 16px;
+            margin: 0 0 5px 0;
+            margin-bottom: 2px;
+            color: #fff;
+           
+        }
+        
+        .project a:hover {
+            background-color: #000000;
+          text-decoration: none;
+  }
+        .project h5 {
+          font-size: 16px;
+          color: #808080;
+          margin-top: 1px;
+          margin-bottom: 1px;
+            
+        }
+#prjct a {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 10px; /* Adjust the padding to control spacing */
+  text-decoration: none; /* Remove underline for links */
+  margin: 5px; /* Adjust the margin to control spacing between elements */
+  border-radius: 5px; /* Add rounded corners */
+  }
+#prjct p {
+  color: #fff;
+}
+
+.project-container {
+  display: block;
+  width: 99%; /* Adjust the width as needed */
+  padding: 3px;
+  background-color: #00;
+  text-decoration: none;
+  color: #333;
+  border: .5px solid #000000;
+  border-radius: 5px;
+  margin: 0px;
+}
+
+.project-container h3 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.project-container p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #fff;
+}
+.p p {
+  padding: 5px;
+}
+
+ .container2 {
+            background-color: red;
+            color: white;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+ }
+.container2 a {
+    color: #fff;
+}
