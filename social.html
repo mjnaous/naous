@@ -17,7 +17,14 @@
     <link rel=stylesheet href=https://mjndev.neocities.org/style.css>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-85WMXB7CQ7"></script>
-      <script type="module">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-85WMXB7CQ7');
+</script>
+    <script type="module">
 class CheckMark extends HTMLElement {
   connectedCallback() {
     const root = this.attachShadow({mode: 'open'});
@@ -34,17 +41,42 @@ class CheckMark extends HTMLElement {
           height: var(--verified-size, ${this.size});
         }
       </style>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    `;
+  }
+  get name() {
+    return this.hasAttribute('name')
+      ? `A verifcation check for ${this.getAttribute('name')}, who is definitely verified`
+      : 'A verification check showing that I am definitely verified';
+  }
+  get color() {
+    return this.hasAttribute('color') ? this.getAttribute('color') : '#00a9e2';
+  }
+  get size() {
+    return this.hasAttribute('size') ? this.getAttribute('size') : '3ex';
+  }
+}
+customElements.define('check-mark', CheckMark);
+      </script>
 
-  gtag('config', 'G-85WMXB7CQ7');
-</script>
+          <meta name="keywords" content="mohamad, about, blog, projects, contact" />
+     
+
+          <meta name="description" content="self-taught frontend web developer based in beirut" />
+    
+    <title>
+      mohamad
+    </title>
+    <meta name=description content="self-taught frontend web developer based in beirut"
+    <meta name=author content="mohamad">
+    <link rel="icon" type="image/png" href="https://mohamad.is-a.dev/m.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel=stylesheet>
+    <link rel=stylesheet href=https://naous.eu.org/s.css>
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin=anonymous>
+    <link rel="stylesheet" href="https://mjndev.neocities.org/style.css">
     </head>
     <body>
-     
-     <div class="container mt-5"><nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+      
+      <div class="container mt-5"><nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
       <a class="navbar-brand mx-0 mr-sm-auto" href=https://naous.eu.org title="Mohamad-Jamil Naous">mohamad<check-mark>mohamad</check-mark></a><div class="navbar-nav flex-row flex-wrap justify-content-center">
       <a class="nav-item nav-link" href=/ title="about">About</a>
       <span class="nav-item navbar-text mx-1">/</span>
@@ -53,7 +85,7 @@ title="social">Social</a>
       <span class="nav-item navbar-text mx-1">/</span>
       <a class="nav-item nav-link" href=/now title="now">Now</a>
         
-        </div>
+      </div>
       </nav>
       </div>
           <hr>
