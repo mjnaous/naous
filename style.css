@@ -2,7 +2,10 @@
   
   
   
-  
+  ::selection {
+  background-color: white;
+  color: black;
+  }
   
   px;font-weight:400;text-decoration:underline;text-decoration-color:#00a9e2;text-underline-offset:.2em}
 #content a *,.nav-link {color:#fff;font-size:20px;font-weight:400;text-decoration:underline;text-decoration-color:#00a9e2;text-underline-offset:.2em}
