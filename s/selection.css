@@ -1,0 +1,8 @@
+::selection {
+  background-color: white;
+  color: black;
+  }
+
+  a::selection {
+    color: #00a9e2;
+  }
